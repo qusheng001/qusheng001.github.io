@@ -100,6 +100,44 @@ a {
   margin-bottom: 20px;
 }
 
+.education-list {
+  display: grid;
+  gap: 10px;
+  max-width: 56rem;
+  list-style: none;
+}
+
+.education-list li {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr) 7rem;
+  gap: 4px 16px;
+}
+
+.education-period {
+  color: #475569;
+  font-variant-numeric: tabular-nums;
+}
+
+.education-degree {
+  color: #475569;
+}
+
+.about-summary {
+  max-width: 56rem;
+  margin-top: 18px;
+}
+
+@media (max-width: 640px) {
+  .education-list li {
+    grid-template-columns: 6rem minmax(0, 1fr);
+    column-gap: 10px;
+  }
+
+  .education-degree {
+    grid-column: 2;
+  }
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

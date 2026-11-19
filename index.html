@@ -19,8 +19,9 @@
 
     <div class="hero-content">
       <h1 lang="en">Hi, I'm Zane Yang 👋</h1>
-      <p>
-        我对具身智能、VLA、网络安全和通信安全感兴趣。
+      <p lang="en">
+        A PhD student interested in embodied AI and vision-language-action (VLA) models,
+        with a focus on network and communication security for robotic systems.
       </p>
       <div class="hero-buttons">
         <a class="btn primary" href="#projects">查看项目</a>
@@ -31,39 +32,55 @@
 
   <main class="container">
     <section id="about" class="section">
-      <h2>关于我</h2>
-      <p>
-        我本科毕业于北京理工大学网络空间安全学院，曾在新加坡国立大学计算机学院攻读硕士学位，
-        目前在哈尔滨工业大学（深圳）计算机科学与技术学院攻读博士学位。
-        我也关注网站安全、人工智能安全和其他计算机技术，近期在学习前端开发并制作一些实用的演示项目。
+      <h2 lang="en">About Me</h2>
+      <ul class="education-list" aria-label="教育经历">
+        <li>
+          <span class="education-period">2021–2025</span>
+          <span>北京理工大学网络空间安全学院</span>
+          <span class="education-degree">工学学士学位</span>
+        </li>
+        <li>
+          <span class="education-period">2025–2027</span>
+          <span>新加坡国立大学计算机学院</span>
+          <span class="education-degree">理学硕士学位</span>
+        </li>
+        <li>
+          <span class="education-period">2027–至今</span>
+          <span>哈尔滨工业大学（深圳）计算机科学与技术学院</span>
+          <span class="education-degree">博士在读</span>
+        </li>
+      </ul>
+      <p class="about-summary">
+        我关注机器人在运行中的安全问题，近期主要研究如何通过通信与系统观测发现异常、保留运行证据，并在仿真中验证这些方法。
       </p>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section" lang="en">
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
+          <h3>NERVE Observer</h3>
+          <p>
+            A runtime observability toolkit for embodied robots that discovers visible assets and passively
+            collects ROS 2, CAN, and host telemetry. A live dashboard shows system activity, while a black box
+            preserves events for replay.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Embodied Security Testbed</h3>
+          <p>
+            A testbed for repeatable robotics security evaluations, combining simulation, runtime telemetry,
+            and experiment replay.
+          </p>
+        </article>
+
+        <article class="card">
           <h3>MBS Parking System</h3>
           <p>
-            A demo project about smart parking, user flow improvement, and visual presentation.
+            A smart-parking prototype focused on simplifying the parking experience and using clear visual
+            cues to guide users through each step.
           </p>
-          <a href="https://github.com/qusheng001" target="_blank">View Project</a>
-        </article>
-
-        <article class="card">
-          <h3>Frontend Demo</h3>
-          <p>
-            A simple responsive website built with HTML, CSS, and JavaScript.
-          </p>
-          <a href="https://github.com/qusheng001" target="_blank">View Project</a>
-        </article>
-
-        <article class="card">
-          <h3>Cybersecurity Notes</h3>
-          <p>
-            A collection of learning notes and practice summaries in cybersecurity.
-          </p>
-          <a href="https://github.com/qusheng001" target="_blank">View Project</a>
         </article>
       </div>
     </section>
