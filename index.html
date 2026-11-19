@@ -31,56 +31,59 @@
   </header>
 
   <main class="container">
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
       <h2 lang="en">About Me</h2>
       <ul class="education-list" aria-label="教育经历">
         <li>
           <span class="education-period">2021–2025</span>
-          <span>北京理工大学网络空间安全学院</span>
+          <span class="education-school">北京理工大学</span>
+          <span class="education-college">网络空间安全学院</span>
           <span class="education-degree">工学学士学位</span>
         </li>
         <li>
           <span class="education-period">2025–2027</span>
-          <span>新加坡国立大学计算机学院</span>
+          <span class="education-school">新加坡国立大学</span>
+          <span class="education-college">计算机学院</span>
           <span class="education-degree">理学硕士学位</span>
         </li>
         <li>
           <span class="education-period">2027–至今</span>
-          <span>哈尔滨工业大学（深圳）计算机科学与技术学院</span>
+          <span class="education-school">哈尔滨工业大学（深圳）</span>
+          <span class="education-college">计算机科学与技术学院</span>
           <span class="education-degree">博士在读</span>
         </li>
       </ul>
       <p class="about-summary">
-        我关注机器人在运行中的安全问题，近期主要研究如何通过通信与系统观测发现异常、保留运行证据，并在仿真中验证这些方法。
+        我关注机器人运行安全，研究如何通过通信与系统观测发现异常、留存运行证据，并在仿真中验证这些<span class="keep-together">方法。</span>
       </p>
     </section>
 
-    <section id="projects" class="section" lang="en">
-      <h2>Projects</h2>
+    <section id="projects" class="section">
+      <h2 lang="en">Projects</h2>
       <div class="cards">
         <article class="card">
-          <h3>NERVE Observer</h3>
+          <h3 lang="en">NERVE Observer</h3>
           <p>
-            A runtime observability toolkit for embodied robots that discovers visible assets and passively
-            collects ROS 2, CAN, and host telemetry. A live dashboard shows system activity, while a black box
-            preserves events for replay.
+            面向具身机器人的态势感知工具，可自动发现可见资产，被动采集 ROS 2、CAN 和主控数据。
+            大屏展示实时状态，黑匣子留存运行事件供事后回放。
           </p>
+          <a href="https://github.com/SEC-NERVE/comm-group" target="_blank" rel="noopener">查看 GitHub 仓库</a>
         </article>
 
         <article class="card">
-          <h3>Embodied Security Testbed</h3>
+          <h3 lang="en">Embodied Security Testbed</h3>
           <p>
-            A testbed for repeatable robotics security evaluations, combining simulation, runtime telemetry,
-            and experiment replay.
+            面向具身机器人的安全实验平台，集成机器人仿真、运行数据采集和实验回放，支持可重复的安全评估。
           </p>
+          <a href="https://github.com/qusheng001/embodied-security-testbed" target="_blank" rel="noopener">查看 GitHub 仓库</a>
         </article>
 
         <article class="card">
-          <h3>MBS Parking System</h3>
+          <h3 lang="en">MBS Parking System</h3>
           <p>
-            A smart-parking prototype focused on simplifying the parking experience and using clear visual
-            cues to guide users through each step.
+            智慧停车系统原型，围绕用户的停车流程设计，用清晰的界面提示引导用户完成各个步骤。
           </p>
+          <a href="https://github.com/qusheng001/mbs" target="_blank" rel="noopener">查看 GitHub 仓库</a>
         </article>
       </div>
     </section>

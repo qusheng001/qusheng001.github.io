@@ -100,16 +100,24 @@ a {
   margin-bottom: 20px;
 }
 
+.about-section {
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.about-section h2 {
+  text-align: center;
+}
+
 .education-list {
   display: grid;
   gap: 10px;
-  max-width: 56rem;
   list-style: none;
 }
 
 .education-list li {
   display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr) 7rem;
+  grid-template-columns: 6.5rem 12.5rem minmax(0, 1fr) 7rem;
   gap: 4px 16px;
 }
 
@@ -118,21 +126,30 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
+.education-school {
+  font-weight: 600;
+}
+
 .education-degree {
   color: #475569;
 }
 
 .about-summary {
-  max-width: 56rem;
   margin-top: 18px;
+  text-align: center;
 }
 
-@media (max-width: 640px) {
+.keep-together {
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
   .education-list li {
     grid-template-columns: 6rem minmax(0, 1fr);
     column-gap: 10px;
   }
 
+  .education-college,
   .education-degree {
     grid-column: 2;
   }
