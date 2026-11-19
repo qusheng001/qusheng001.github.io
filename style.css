@@ -51,11 +51,56 @@ a {
 .hero-content {
   width: min(1100px, 92%);
   margin: 0 auto;
-  padding-top: 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 20rem);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.hero-portrait {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  justify-self: end;
+  /* Fit the portrait outline, then fade the shoulders into the hero background. */
+  clip-path: polygon(
+    48.2% 11%, 43.5% 12%, 38.9% 14%, 35.7% 17%, 34.1% 20%,
+    32.7% 23%, 32.3% 26%, 33% 29%, 35.1% 32%, 33.9% 34%,
+    34.8% 37%, 35.9% 40%, 36.6% 42%, 38.8% 45%, 40.7% 49%,
+    39.9% 52%, 37.5% 55%, 32.7% 58%, 25.4% 61%, 20% 64%,
+    14.8% 67%, 13.5% 70%, 12.5% 73%, 11.2% 77%, 8.1% 100%,
+    92.3% 100%, 89.3% 77%, 87.9% 73%, 87.3% 70%, 85.6% 67%,
+    80.7% 64%, 74.8% 61%, 67.2% 58%, 62.3% 55%, 60% 52%,
+    58.8% 49%, 60.9% 45%, 63% 42%, 63.8% 40%, 64.8% 37%,
+    65.6% 34%, 64.6% 32%, 65.9% 29%, 66.6% 26%, 66.1% 23%,
+    65% 20%, 63.5% 17%, 60.7% 14%, 58% 12%, 54.5% 11%, 51% 10.8%
+  );
+  mask-image:
+    linear-gradient(#000 62%, #000d 75%, transparent 100%),
+    linear-gradient(90deg, transparent 8%, #000 21% 79%, transparent 92%);
+  mask-composite: intersect;
+}
+
+@media (max-width: 820px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-bottom: 36px;
+  }
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-portrait {
+    max-width: 16rem;
+    justify-self: center;
+  }
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: clamp(2rem, 5.8vw, 3rem);
   margin-bottom: 16px;
 }
 
