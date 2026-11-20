@@ -128,6 +128,20 @@ a:hover {
   display: block;
 }
 
+.profile .affiliation {
+  display: flex;
+  align-items: center;
+  gap: .42rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: .93rem;
+}
+
+.affiliation img {
+  flex: none;
+  object-fit: contain;
+}
+
 .keep-together {
   white-space: nowrap;
 }
@@ -235,20 +249,6 @@ a:hover {
 
 .intro p {
   margin: .85rem 0 0;
-}
-
-.intro .affiliation {
-  display: flex;
-  align-items: center;
-  gap: .42rem;
-  margin-top: .44rem;
-  color: var(--muted);
-  font-size: .93rem;
-}
-
-.affiliation img {
-  flex: none;
-  object-fit: contain;
 }
 
 .section-icon {
