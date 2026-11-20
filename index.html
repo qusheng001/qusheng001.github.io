@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zane Yang (杨竞哲)</title>
-  <link rel="stylesheet" href="style.css?v=portrait-oval-1" />
+  <link rel="stylesheet" href="style.css?v=academic-1">
+  <script src="wechat.js" defer></script>
 </head>
-<body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo" lang="en">Yang Jingzhe</div>
-      <div class="nav-links">
-        <a href="#about">关于我</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系方式</a>
+<body id="top">
+  <header class="site-header">
+    <nav class="shell site-nav" aria-label="主导航">
+      <a class="site-name" href="#top" lang="en">Yang Jingzhe</a>
+      <div class="nav-links" lang="en">
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">News</a>
+        <a href="#papers">Papers</a>
       </div>
     </nav>
-
-    <div class="hero-content">
-      <div class="hero-intro">
-        <h1 lang="en">Hi, I'm Zane Yang 👋</h1>
-        <p lang="en">
-          A PhD student interested in embodied AI and vision-language-action (VLA) models,
-          with a focus on network and communication security for robotic systems.
-        </p>
-        <div class="hero-buttons">
-          <a class="btn primary" href="#projects">查看项目</a>
-          <a class="btn" href="https://github.com/qusheng001" target="_blank">访问 GitHub</a>
-        </div>
-      </div>
-      <img class="hero-portrait" src="assets/zane-yang.jpg" alt="杨竞哲的个人照片"
-           width="232" height="290">
-    </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="section about-section">
-      <h2 lang="en">About Me</h2>
-      <ul class="education-list" aria-label="教育经历">
-        <li>
-          <span class="education-period">2021–2025</span>
-          <span class="education-school">北京理工大学</span>
-          <span class="education-college">网络空间安全学院</span>
-          <span class="education-degree">工学学士学位</span>
-        </li>
-        <li>
-          <span class="education-period">2025–2027</span>
-          <span class="education-school">新加坡国立大学</span>
-          <span class="education-college">计算机学院</span>
-          <span class="education-degree">理学硕士学位</span>
-        </li>
-        <li>
-          <span class="education-period">2027–至今</span>
-          <span class="education-school">哈尔滨工业大学（深圳）</span>
-          <span class="education-college">计算机科学与技术学院</span>
-          <span class="education-degree">博士在读</span>
-        </li>
-      </ul>
-      <p class="about-summary">
+  <div class="shell layout">
+    <aside class="profile" aria-labelledby="profile-name">
+      <img class="profile-portrait" src="assets/zane-yang.jpg" alt="杨竞哲的个人照片" width="152" height="194">
+      <h1 id="profile-name">杨竞哲 <span lang="en">Zane Yang</span></h1>
+      <p lang="en">
+        A PhD student interested in embodied AI and vision-language-action (VLA) models,
+        with a focus on network and communication security for robotic systems.
+      </p>
+      <p>
         我关注机器人运行安全，研究如何通过通信与系统观测发现异常、留存运行证据，并在仿真中验证这些<span class="keep-together">方法。</span>
       </p>
-    </section>
+      <address class="contact" id="contact">
+        <a href="mailto:E1582553@u.nus.edu">E1582553@u.nus.edu</a>
+        <a href="https://github.com/qusheng001">GitHub</a>
+        <div class="wechat">
+          <button class="wechat-toggle" type="button" aria-expanded="false" aria-controls="wechat-panel">WeChat：Zane</button>
+          <div class="wechat-panel" id="wechat-panel" hidden>
+            <div class="wechat-code">
+              <img src="assets/wechat-zane.jpg" alt="扫一扫添加 Zane 的微信二维码" width="820" height="1212">
+            </div>
+          </div>
+        </div>
+      </address>
+    </aside>
 
-    <section id="projects" class="section">
-      <h2 lang="en">Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 lang="en">NERVE Observer</h3>
-          <p>
-            面向具身机器人的态势感知工具，可自动发现可见资产，被动采集 ROS 2、CAN 和主控数据。
-            大屏展示实时状态，黑匣子留存运行事件供事后回放。
-          </p>
-          <a href="https://github.com/SEC-NERVE/comm-group" target="_blank" rel="noopener">查看 GitHub 仓库</a>
-        </article>
+    <main class="sections" id="about">
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title" lang="en">Education</h2>
+        <ul class="education-list" aria-label="教育经历">
+          <li>
+            <span class="education-period">2021–2025</span>
+            <span class="education-school">北京理工大学</span>
+            <span class="education-college">网络空间安全学院</span>
+            <span class="education-degree">工学学士学位</span>
+          </li>
+          <li>
+            <span class="education-period">2025–2027</span>
+            <span class="education-school">新加坡国立大学</span>
+            <span class="education-college">计算机学院</span>
+            <span class="education-degree">理学硕士学位</span>
+          </li>
+          <li>
+            <span class="education-period">2027–至今</span>
+            <span class="education-school">哈尔滨工业大学（深圳）</span>
+            <span class="education-college">计算机科学与技术学院</span>
+            <span class="education-degree">博士在读</span>
+          </li>
+        </ul>
+      </section>
 
-        <article class="card">
-          <h3 lang="en">Embodied Security Testbed</h3>
-          <p>
-            面向具身机器人的安全实验平台，集成机器人仿真、运行数据采集和实验回放，支持可重复的安全评估。
-          </p>
-          <a href="https://github.com/qusheng001/embodied-security-testbed" target="_blank" rel="noopener">查看 GitHub 仓库</a>
-        </article>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title" lang="en">Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3 lang="en"><a href="https://github.com/SEC-NERVE/comm-group" target="_blank" rel="noopener">NERVE Observer</a></h3>
+            <p>
+              面向具身机器人的态势感知工具，可自动发现可见资产，被动采集 ROS 2、CAN 和主控数据。
+              大屏展示实时状态，黑匣子留存运行事件供事后回放。
+            </p>
+          </article>
 
-        <article class="card">
-          <h3 lang="en">MBS Parking System</h3>
-          <p>
-            智慧停车系统原型，围绕用户的停车流程设计，用清晰的界面提示引导用户完成各个步骤。
-          </p>
-          <a href="https://github.com/qusheng001/mbs" target="_blank" rel="noopener">查看 GitHub 仓库</a>
-        </article>
-      </div>
-    </section>
+          <article class="project">
+            <h3 lang="en"><a href="https://github.com/qusheng001/embodied-security-testbed" target="_blank" rel="noopener">Embodied Security Testbed</a></h3>
+            <p>
+              面向具身机器人的安全实验平台，集成机器人仿真、运行数据采集和实验回放，支持可重复的安全评估。
+            </p>
+          </article>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: E1582553@u.nus.edu</p>
-      <p>GitHub: <a href="https://github.com/qusheng001" target="_blank">https://github.com/qusheng001</a></p>
-    </section>
-  </main>
+          <article class="project">
+            <h3 lang="en"><a href="https://github.com/qusheng001/mbs" target="_blank" rel="noopener">MBS Parking System</a></h3>
+            <p>
+              智慧停车系统原型，围绕用户的停车流程设计，用清晰的界面提示引导用户完成各个步骤。
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <p>© 2026 Zane Yang. Built with GitHub Pages.</p>
-  </footer>
+      <section id="news" aria-labelledby="news-title">
+        <h2 id="news-title" lang="en">News</h2>
+      </section>
+
+      <section id="papers" aria-labelledby="papers-title">
+        <h2 id="papers-title" lang="en">Papers</h2>
+      </section>
+
+      <footer class="footer" lang="en">© 2026 Zane Yang. Built with GitHub Pages.</footer>
+    </main>
+  </div>
 </body>
 </html>
