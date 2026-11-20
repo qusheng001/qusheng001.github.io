@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zane Yang (杨竞哲)</title>
-  <link rel="stylesheet" href="style.css?v=academic-1">
+  <link rel="stylesheet" href="style.css?v=academic-2">
   <script src="wechat.js" defer></script>
 </head>
-<body id="top">
+<body>
   <header class="site-header">
     <nav class="shell site-nav" aria-label="主导航">
       <a class="site-name" href="#top" lang="en">Yang Jingzhe</a>
@@ -22,20 +22,13 @@
 
   <div class="shell layout">
     <aside class="profile" aria-labelledby="profile-name">
-      <img class="profile-portrait" src="assets/zane-yang.jpg" alt="杨竞哲的个人照片" width="152" height="194">
-      <h1 id="profile-name">杨竞哲 <span lang="en">Zane Yang</span></h1>
-      <p lang="en">
-        A PhD student interested in embodied AI and vision-language-action (VLA) models,
-        with a focus on network and communication security for robotic systems.
-      </p>
-      <p>
-        我关注机器人运行安全，研究如何通过通信与系统观测发现异常、留存运行证据，并在仿真中验证这些<span class="keep-together">方法。</span>
-      </p>
+      <img class="profile-portrait" src="assets/zane-yang.jpg" alt="杨竞哲的个人照片" width="206" height="278">
+      <h2 id="profile-name">杨竞哲 <span lang="en">Zane Yang</span></h2>
       <address class="contact" id="contact">
-        <a href="mailto:E1582553@u.nus.edu">E1582553@u.nus.edu</a>
-        <a href="https://github.com/qusheng001">GitHub</a>
+        <a href="mailto:E1582553@u.nus.edu"><span class="contact-icon" aria-hidden="true">✉</span>E1582553@u.nus.edu</a>
+        <a href="https://github.com/qusheng001"><span class="contact-icon" aria-hidden="true">↗</span>GitHub</a>
         <div class="wechat">
-          <button class="wechat-toggle" type="button" aria-expanded="false" aria-controls="wechat-panel">WeChat：Zane</button>
+          <button class="wechat-toggle" type="button" aria-expanded="false" aria-controls="wechat-panel"><span class="contact-icon" aria-hidden="true">💬</span>WeChat：Zane</button>
           <div class="wechat-panel" id="wechat-panel" hidden>
             <div class="wechat-code">
               <img src="assets/wechat-zane.jpg" alt="扫一扫添加 Zane 的微信二维码" width="820" height="1212">
@@ -45,9 +38,24 @@
       </address>
     </aside>
 
-    <main class="sections" id="about">
+    <main class="sections" id="about" tabindex="0" aria-label="个人主页内容">
+      <header class="intro" id="top">
+        <h1><span lang="en">Hi, I’m Zane Yang</span> <span class="intro-name">（杨竞哲）</span> <span class="wave" aria-hidden="true">👋</span></h1>
+        <p class="affiliation" lang="en">
+          <span>Ph.D. student in CS, HITsz</span>
+          <img src="assets/hit-emblem.png" alt="哈尔滨工业大学校徽" width="24" height="24">
+        </p>
+        <p lang="en">
+          I’m interested in embodied AI and vision-language-action (VLA) models,
+          with a focus on network and communication security for robotic systems.
+        </p>
+        <p>
+          我关注机器人运行安全，研究如何通过通信与系统观测发现异常、留存运行证据，并在仿真中验证这些<span class="keep-together">方法。</span>
+        </p>
+      </header>
+
       <section id="education" aria-labelledby="education-title">
-        <h2 id="education-title" lang="en">Education</h2>
+        <h2 id="education-title" lang="en"><span class="section-icon" aria-hidden="true">🎓</span>Education</h2>
         <ul class="education-list" aria-label="教育经历">
           <li>
             <span class="education-period">2021–2025</span>
@@ -71,7 +79,7 @@
       </section>
 
       <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title" lang="en">Projects</h2>
+        <h2 id="projects-title" lang="en"><span class="section-icon" aria-hidden="true">🛠️</span>Projects</h2>
         <div class="projects">
           <article class="project">
             <h3 lang="en"><a href="https://github.com/SEC-NERVE/comm-group" target="_blank" rel="noopener">NERVE Observer</a></h3>
@@ -98,11 +106,11 @@
       </section>
 
       <section id="news" aria-labelledby="news-title">
-        <h2 id="news-title" lang="en">News</h2>
+        <h2 id="news-title" lang="en"><span class="section-icon" aria-hidden="true">🔥</span>News</h2>
       </section>
 
       <section id="papers" aria-labelledby="papers-title">
-        <h2 id="papers-title" lang="en">Papers</h2>
+        <h2 id="papers-title" lang="en"><span class="section-icon" aria-hidden="true">📄</span>Papers</h2>
       </section>
 
       <footer class="footer" lang="en">© 2026 Zane Yang. Built with GitHub Pages.</footer>
