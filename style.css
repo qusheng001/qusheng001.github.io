@@ -251,6 +251,12 @@ a:hover {
   margin: .85rem 0 0;
 }
 
+.intro .intro-note {
+  margin-top: .6rem;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
 .section-icon {
   font-size: .86em;
 }
@@ -319,9 +325,32 @@ a:hover {
   font-weight: 500;
 }
 
+.project-status {
+  color: var(--muted);
+  font-size: .88em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
 .project p {
   margin: 0;
   color: var(--muted);
+}
+
+.news-list {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+}
+
+.news-list time {
+  margin-inline-end: .45em;
+  font-style: italic;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.news-list strong {
+  font-weight: 600;
 }
 
 .footer {
