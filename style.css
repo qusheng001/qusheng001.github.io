@@ -251,12 +251,6 @@ a:hover {
   margin: .85rem 0 0;
 }
 
-.intro .intro-note {
-  margin-top: .6rem;
-  color: var(--muted);
-  font-size: .92rem;
-}
-
 .section-icon {
   font-size: .86em;
 }
